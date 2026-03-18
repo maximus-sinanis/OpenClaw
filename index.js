@@ -85,20 +85,3 @@ res.status(500).json({ error: String(err) });
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log('Worker listening on', port));
-
-Create another file named package.json and paste this exact content:
-(package.json — copy/paste)
-
-{
-"name": "openclaw-outlook-worker",
-"version": "1.0.0",
-"main": "index.js",
-"engines": { "node": "18.x || 20.x" },
-"dependencies": {
-"express": "^4.18.2",
-"node-fetch": "^3.4.0"
-},
-"scripts": {
-"start": "node index.js"
-}
-}
